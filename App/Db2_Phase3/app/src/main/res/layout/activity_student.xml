@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StudentActivity">
+
+    <Button
+        android:id="@+id/bLogout"
+        android:layout_below="@id/bStudyMaterials"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:text="Logout" />
+
+    <TextView
+        android:id="@+id/tvHeader"
+        android:textSize="30sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome" />
+
+    <Button
+        android:id="@+id/bEditInfo"
+        android:layout_below="@id/tvMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:text="Edit Your Info" />
+
+    <Button
+        android:id="@+id/bMeetings"
+        android:layout_below="@id/bEditInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:text="Join/Leave Meetings" />
+
+    <Button
+        android:id="@+id/bMentorInfo"
+        android:layout_below="@id/bMeetings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:text="View Attendees For Meetings You Mentor" />
+
+    <Button
+        android:id="@+id/bStudyMaterials"
+        android:layout_below="@id/bMentorInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:text="View Study Materials For Your Group's Meetings" />
+
+    <TextView
+        android:id="@+id/tvMessage"
+        android:layout_below="@id/tvHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+  <RelativeLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tvHeader"
+        android:textSize="30sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome" />
+
+    <TextView
+        android:id="@+id/tvHeader2"
+        android:layout_below="@id/tvHeader"
+        android:textSize="15sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hit the checkbox next to the meetings you'd like to join/leave then hit the corresponding button to join/leave meetings" />
+
+    <Button
+        android:id="@+id/bJoinMentor"
+        android:layout_below="@id/lMentorJoin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5sp"
+        android:text="Join Selected Mentor Meetings" />
+
+    <Button
+        android:id="@+id/bJoinMentee"
+        android:layout_below="@id/lMenteeJoin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5sp"
+        android:text="Join Selected Mentee Meetings" />
+
+    <Button
+        android:id="@+id/bLeaveMentor"
+        android:layout_below="@id/lMentorLeave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5sp"
+        android:text="Leave Selected Mentor Meetings" />
+
+    <Button
+        android:id="@+id/bLeaveMentorAll"
+        android:layout_below="@id/bLeaveMentor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5sp"
+        android:text="Leave All Mentor Meetings" />
+
+    <Button
+        android:id="@+id/bLeaveMentee"
+        android:layout_below="@id/lMenteeLeave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5sp"
+        android:text="Leave Selected Mentee Meetings" />
+
+    <Button
+        android:id="@+id/bLeaveMenteeAll"
+        android:layout_below="@id/bLeaveMentee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5sp"
+        android:text="Leave All Mentee Meetings" />
+
+    <Button
+        android:id="@+id/bMainPage"
+        android:layout_below="@id/bLeaveMenteeAll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:text="Return to User Page" />
+
+    <TextView
+        android:id="@+id/tvMentorJoin"
+        android:layout_below="@id/tvHeader2"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Meetings student can join as a mentor:" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lMentorJoin"
+        android:layout_below="@id/tvMentorJoin"
+        android:orientation="vertical">
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvMentorLeave"
+        android:layout_below="@id/bJoinMentor"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Meetings student can leave as a mentor:" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lMentorLeave"
+        android:layout_below="@id/tvMentorLeave"
+        android:orientation="vertical">
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvMenteeJoin"
+        android:layout_below="@id/bLeaveMentorAll"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Meetings student can join as a mentee:" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lMenteeJoin"
+        android:layout_below="@id/tvMenteeJoin"
+        android:orientation="vertical">
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvMenteeLeave"
+        android:layout_below="@id/bJoinMentee"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Meetings student can leave as a mentee:" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lMenteeLeave"
+        android:layout_below="@id/tvMenteeLeave"
+        android:orientation="vertical">
+    </LinearLayout>
+  </RelativeLayout>
+</ScrollView>

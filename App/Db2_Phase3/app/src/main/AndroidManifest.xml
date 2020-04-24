@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.android.database2">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".AdminJoinMeetingActivity"></activity>
+        <activity android:name=".AdminActivity" />
+        <activity android:name=".AdminLoginActivity" />
+        <activity android:name=".ParentMentorInfoActivity" />
+        <activity android:name=".ParentStudyMaterialsActivity" />
+        <activity android:name=".ParentJoinMeetingActivity" />
+        <activity android:name=".StudentStudyMaterialsActivity" />
+        <activity android:name=".StudentMentorInfoActivity" />
+        <activity android:name=".StudentJoinMeetingActivity" />
+        <activity android:name=".ParentEditStudentActivity" />
+        <activity android:name=".ParentEditActivity" />
+        <activity android:name=".StudentEditActivity" />
+        <activity android:name=".StudentActivity" />
+        <activity android:name=".StudentLoginActivity" />
+        <activity android:name=".StudentRegistrationActivity" />
+        <activity android:name=".ParentActivity" />
+        <activity android:name=".ParentLoginActivity" />
+        <activity android:name=".ParentRegistrationActivity" />
+        <activity
+            android:name=".LandingActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

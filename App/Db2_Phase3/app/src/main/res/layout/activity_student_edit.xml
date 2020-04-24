@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".StudentEditActivity">
+
+
+        <Button
+            android:id="@+id/bRegister"
+            android:layout_below="@id/spGrade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:text="Edit Your Info" />
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_below="@id/cbEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textEmailAddress" />
+
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_below="@id/cbPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_below="@id/cbName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/etPhone"
+            android:layout_below="@id/cbPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="phone" />
+
+
+        <Button
+            android:id="@+id/bMainPage"
+            android:layout_below="@id/bRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:text="Return to User Page" />
+
+        <TextView
+            android:id="@+id/tvHeader"
+            android:textSize="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit Your Information" />
+
+        <TextView
+            android:id="@+id/tvInfo"
+            android:layout_below="@id/tvHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Click the checkbox for the info you'd like to edit then enter the info in the field below it."/>
+
+        <TextView
+            android:id="@+id/tvMessage"
+            android:layout_below="@id/tvInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Spinner
+            android:id="@+id/spGrade"
+            android:layout_below="@id/cbGrade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/grade" />
+
+        <CheckBox
+            android:id="@+id/cbEmail"
+            android:layout_below="@id/tvMessage"
+            android:layout_marginTop="30sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit Email:"/>
+        <CheckBox
+            android:id="@+id/cbPassword"
+            android:layout_marginTop="20sp"
+            android:layout_below="@id/etEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit Password:"/>
+        <CheckBox
+            android:id="@+id/cbName"
+            android:layout_marginTop="20sp"
+            android:layout_below="@id/etPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit Name:"/>
+        <CheckBox
+            android:id="@+id/cbPhone"
+            android:layout_below="@id/etName"
+            android:layout_marginTop="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit Phone:"/>
+        <CheckBox
+            android:id="@+id/cbGrade"
+            android:layout_marginTop="20sp"
+            android:layout_below="@id/etPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit Grade:"/>
+    </RelativeLayout>
+</ScrollView>

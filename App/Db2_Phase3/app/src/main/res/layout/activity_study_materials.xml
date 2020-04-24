@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/tvHeader"
+            android:textSize="30sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome" />
+
+        <Button
+            android:id="@+id/bMainPage"
+            android:layout_below="@id/lStudyMaterials"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:text="Return to User Page" />
+
+        <TextView
+            android:id="@+id/tvStudyMaterials"
+            android:layout_below="@id/tvHeader"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Study materials for student's group's meetings:" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lStudyMaterials"
+            android:layout_below="@id/tvStudyMaterials"
+            android:orientation="vertical">
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>
